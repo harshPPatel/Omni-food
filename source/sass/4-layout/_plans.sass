@@ -1,0 +1,47 @@
+.section-plan
+  background-color: $light-gray-color
+
+.plan-box
+  background-color: $white-color
+  border-radius: 5px
+  width: 95%
+  margin: 0 auto
+  text-align: center
+  transition: all 0.2s ease
+  cursor: default
+  box-shadow: 2px 2px 5px $dark-gray-color
+  &:hover
+    box-shadow: 5px 5px 10px $dark-gray-color
+    transform: scale(1.05)
+
+.plan-box > div
+    padding: 15px
+    border-bottom: 1px solid $dark-gray-color
+    &:first-of-type
+      background-color: #fcfcfc
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+
+.plan-price
+  font-size: 300%
+  margin-bottom: 10px
+  font-weight: 300
+  color: $orange-color
+  span
+    font-size: 50%
+    color: $font-color
+
+.plan-price-per-meal
+  font-size: 80%
+
+.plan-box
+  ul
+    margin: 0 auto
+    list-style: none
+    text-align: left
+    width: 90%
+    li
+      padding: 5px 0
+
+.premium-plan
+  transform: scale(1.05)

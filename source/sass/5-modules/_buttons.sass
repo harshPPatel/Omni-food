@@ -1,0 +1,42 @@
+.btn:link,
+.btn:visited,
+input[type="submit"]
+  display: inline-block
+  padding: 10px 30px
+  border-radius: 100px
+  box-sizing: border-box
+  transition: all 0.2s ease
+  border: 1px solid $orange-color
+  &:hover,
+  &:active
+    background-color: $dark-orange-color
+    border-color: $dark-orange-color
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"]
+  color: $white-color
+  background-color: $orange-color
+
+.btn-ghost:link,
+.btn-ghost:visited
+  color: $orange-color
+  &:hover,
+  &:active
+    color: $white-color
+
+.btn-app
+  margin-right: 20px
+  img
+    height: 50px
+    width: auto
+
+.generic-links:link,
+.generic-links:visited
+  color: $orange-color
+  border-bottom: 1px solid $orange-color
+  transition: all 0.4s ease
+  &:hover,
+  &:active
+    color: $dark-orange-color
+    border-color: transparent

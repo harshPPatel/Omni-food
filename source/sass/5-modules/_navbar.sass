@@ -1,0 +1,38 @@
+nav,
+nav .row
+  width: 100%
+  height: $nav-height
+
+nav .row
+  display: flex
+  align-items: center
+
+.logo
+  height: 100px
+  width: auto
+  margin: 20px 0
+
+.main-nav
+  list-style: none
+  margin: 0
+  margin-left: auto
+  li
+    display: inline-block
+    margin-left: 30px
+    &:last-of-type
+      margin-left: 0
+
+.nav-links:link,
+.nav-links:visited
+  display: block
+  color: $white-color
+  font-size: 90%
+  letter-spacing: 1px
+  white-space: 2px
+  line-height: $nav-height
+  border-bottom: 3px solid transparent
+  padding: 0 10px
+  transition: all 0.2s ease
+  &:hover,
+  &:active
+    border-color: $orange-color

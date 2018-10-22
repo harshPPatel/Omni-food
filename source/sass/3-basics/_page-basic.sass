@@ -1,0 +1,67 @@
+html
+  background-color: $white-color
+  color: $font-color
+  font-family: 'Lato', 'Aria', sans-serif
+  font-weight: 300
+  font-size: 20px
+  line-height: 1.5
+  text-rendering: optimizeLegibility
+
+a
+  text-decoration: none
+
+section
+  padding: 100px 0
+
+blockquote
+  padding: 2%
+  font-style: italic
+  line-height: 150%
+  letter-spacing: 1px
+  margin-top: 50px
+  &::before
+    content: "\201C"
+    font-size: 400%
+    font-family: inherit
+    display: block
+
+cite
+  font-size: 90%
+  margin-top: 25px
+  display: block
+  line-height: 150%
+  cursor: default
+  &:hover
+    img
+      transform: scale(1.2)
+  img
+    vertical-align: middle
+    height: 40px
+    border-radius: 50%
+    margin-right: 10px
+    line-height: 150%
+    transition: transform 0.15s ease-in-out
+
+.row
+  max-width: 1140px
+  margin: 0 auto
+
+.clearfix
+  zoom: 1
+  &::after
+    content: '.'
+    clear: both
+    display: block
+    height: 0
+    visibility: hidden
+
+.box
+  box-sizing: border-box
+  padding: 1%
+  cursor: default
+  &:hover
+    .icon-big
+      transform: scale(1.2)
+
+.col
+  box-sizing: border-box
