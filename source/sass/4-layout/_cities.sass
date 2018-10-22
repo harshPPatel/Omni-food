@@ -1,4 +1,13 @@
 .section-cities
+  @media (max-width: 1023px)
+    h3
+      font-size: 110%
+      text-align: center
+  @media (max-width: 767px)
+    width: 70%
+    margin: 0 auto
+    .box
+      margin-bottom: 25px
   img
     width: 100%
     height: auto
@@ -9,9 +18,16 @@
   line-height: 150%
   display: flex
   align-items: center
+  @media (max-width: 767px)
+    width: 70%
+    margin: 0 auto
+    text-align: left
+  p
+    margin: 0
+    @media (max-width: 767px)
+      line-height: 180%
   &:last-of-type
     margin-bottom: 0
   &:hover
     .icon-small
       transform: scale(1.1)
-      

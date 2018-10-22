@@ -13,13 +13,21 @@ h1
   margin-bottom: 25px
   color: $white-color
   font-size: 240%
-  white-space: 5px
+  word-spacing: 5px
+  @media (max-width: 767px)
+    font-size: 180%
+  @media (max-width: 480px)
+    font-size: 150%
 
 h2
   font-size: 180%
-  white-space: 3px
+  word-spacing: 3px
   text-align: center
   margin-bottom: 30px
+  @media (max-width: 767px)
+    font-size: 150%
+  @media (max-width: 480px)
+    font-size: 120%
   &::after
     display: block
     height: 2px
@@ -28,6 +36,8 @@ h2
     margin: 0 auto
     margin-top: 30px
     content: " "
+    @media (max-width: 1023px)
+      margin-top: 20px
 
 h3
   font-size: 110%
@@ -39,6 +49,11 @@ h3
   width: 70%
   text-align: center
   margin: 0 auto
+  @media (max-width: 1023px)
+    width: 80%
+  @media (max-width: 767px)
+    width: 95%
+    font-size: 100%
 
 .box p
   line-height: 145%

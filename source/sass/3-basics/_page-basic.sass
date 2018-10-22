@@ -1,3 +1,7 @@
+html,
+body
+  overflow-x: hidden
+
 html
   background-color: $white-color
   color: $font-color
@@ -6,12 +10,22 @@ html
   font-size: 20px
   line-height: 1.5
   text-rendering: optimizeLegibility
+  @media (max-width: 1023px)
+    font-size: 18px
+  @media (max-width: 767px)
+    font-size: 16px
+  @media (max-width: 480px)
+    font-size: 14px
 
 a
   text-decoration: none
 
 section
   padding: 100px 0
+  @media (max-width: 1023px)
+    padding: 50px 0
+  @media (max-width: 767px)
+    padding: 40px 0
 
 blockquote
   padding: 2%
@@ -19,6 +33,9 @@ blockquote
   line-height: 150%
   letter-spacing: 1px
   margin-top: 50px
+  @media (max-width: 767px)
+    padding: 0 20px
+    text-align: center
   &::before
     content: "\201C"
     font-size: 400%
@@ -43,8 +60,15 @@ cite
     transition: transform 0.15s ease-in-out
 
 .row
+  width: 90%
   max-width: 1140px
   margin: 0 auto
+  @media (max-width: 1200px)
+    padding: 0 2%
+  @media (max-width: 767px)
+    padding: 0 4%
+  @media (max-width: 480px)
+    padding: 1%
 
 .clearfix
   zoom: 1
@@ -59,9 +83,20 @@ cite
   box-sizing: border-box
   padding: 1%
   cursor: default
+  @media (max-width: 767px)
+    text-align: center
+    p
+      width: 90%
+      margin: 0 auto
+      font-size: 100%
   &:hover
     .icon-big
       transform: scale(1.2)
+      @media (max-width: 767px)
+        transform: none
+
 
 .col
   box-sizing: border-box
+  @media (max-width: 767px)
+    width: 100%

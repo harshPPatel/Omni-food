@@ -7,6 +7,9 @@ input[type="submit"]
   box-sizing: border-box
   transition: all 0.2s ease
   border: 1px solid $orange-color
+  @media (max-width: 1023px)
+    padding: 8px 20px
+    font-size: 90%
   &:hover,
   &:active
     background-color: $dark-orange-color
@@ -27,9 +30,17 @@ input[type="submit"]
 
 .btn-app
   margin-right: 20px
+  @media (max-width: 480px)
+    display: block
+    text-align: center
+    margin: 0
+    margin-bottom: 10px
   img
     height: 50px
     width: auto
+    @media (max-width: 480px)
+      width: 100%
+      height: auto
 
 .generic-links:link,
 .generic-links:visited
