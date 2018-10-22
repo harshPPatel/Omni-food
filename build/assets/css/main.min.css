@@ -89,7 +89,6 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -149,8 +148,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -567,6 +564,7 @@ cite {
   line-height: 150%;
   cursor: default; }
   cite:hover img {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2); }
   cite img {
     vertical-align: middle;
@@ -574,7 +572,9 @@ cite {
     border-radius: 50%;
     margin-right: 10px;
     line-height: 150%;
-    transition: transform 0.15s ease-in-out; }
+    transition: -webkit-transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out; }
 
 .row {
   width: 90%;
@@ -611,10 +611,12 @@ cite {
         margin: 0 auto;
         font-size: 100%; } }
   .box:hover .icon-big {
-    transform: scale(1.2); }
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
     @media (max-width: 767px) {
       .box:hover .icon-big {
-        transform: none; } }
+        -webkit-transform: none;
+                transform: none; } }
 
 .col {
   box-sizing: border-box; }
@@ -702,7 +704,8 @@ header {
   max-width: 1140px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   @media (max-width: 1200px) {
     .hero-text-box {
       width: 90%;
@@ -746,11 +749,13 @@ header .btn-full {
     opacity: 0.7;
     width: 100%;
     height: 100%;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
     transition: all 0.4s ease-out; }
     .meal-photo img:hover {
       opacity: 1;
-      transform: scale(1.1); }
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
 
 .section-steps {
   background-color: #f4f4f4; }
@@ -835,8 +840,10 @@ header .btn-full {
     background-color: #e67e22;
     border-color: #e67e22;
     color: #ffffff;
-    transform: scale(1.075);
-    transform-origin: 0%; }
+    -webkit-transform: scale(1.075);
+            transform: scale(1.075);
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%; }
 
 @media (max-width: 767px) {
   .step-row {
@@ -877,7 +884,8 @@ header .btn-full {
   .city-feature:last-of-type {
     margin-bottom: 0; }
   .city-feature:hover .icon-small {
-    transform: scale(1.1); }
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 .section-testimonials {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/back-customers.jpg") center center no-repeat;
@@ -902,7 +910,8 @@ header .btn-full {
       width: 95%; } }
   .plan-box:hover {
     box-shadow: 5px 5px 10px #e8e8e8;
-    transform: scale(1.05); }
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
 
 .plan-box > div {
   padding: 15px;
@@ -960,7 +969,8 @@ header .btn-full {
         font-size: 90%; } }
 
 .premium-plan {
-  transform: scale(1.05); }
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
 
 .contact-form {
   width: 60%;
@@ -995,6 +1005,24 @@ textarea {
     select,
     textarea {
       padding: 5px; }
+      input[type="text"] ::-webkit-input-placeholder,
+      input[type="text"] option,
+      input[type="email"] ::-webkit-input-placeholder,
+      input[type="email"] option,
+      select ::-webkit-input-placeholder,
+      select option,
+      textarea ::-webkit-input-placeholder,
+      textarea option {
+        font-size: 90%; }
+      input[type="text"] ::-ms-input-placeholder,
+      input[type="text"] option,
+      input[type="email"] ::-ms-input-placeholder,
+      input[type="email"] option,
+      select ::-ms-input-placeholder,
+      select option,
+      textarea ::-ms-input-placeholder,
+      textarea option {
+        font-size: 90%; }
       input[type="text"] ::placeholder,
       input[type="text"] option,
       input[type="email"] ::placeholder,
@@ -1152,7 +1180,8 @@ input[type="submit"] {
   font-size: 250%;
   margin-bottom: 10px;
   transition: all 0.3s ease;
-  transform-origin: 0; }
+  -webkit-transform-origin: 0;
+          transform-origin: 0; }
 
 .icon-small {
   color: #cf6d17;

@@ -43,6 +43,7 @@ gulp.task('sass', function() {
             basename: 'main',
             suffix: '.min'
           }))
+        .pipe(autoprefixer())
 
         .pipe(gulp.dest('build/assets/css'));
 });
