@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.min.css" />
 </head>
@@ -28,9 +28,9 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-            <a href="#" class="btn btn-full js--scroll-to-plans">I'm hungry</a>
-            <a href="#" class="btn btn-ghost js--scroll-to-start">Show me more</a>
+            <h1 data-aos="fade-left" data-aos-duration="1000">Goodbye junk food. <br> Hello super healthy meals.</h1>
+            <a href="#" class="btn btn-full js--scroll-to-plans" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">I'm hungry</a>
+            <a href="#" class="btn btn-ghost js--scroll-to-start" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">Show me more</a>
         </div>
     </header>
 
@@ -135,7 +135,7 @@
 
         <div class="row step-row">
             <div class="col span-1-of-2 steps-box">
-                <img src="assets/img/app-iPhone.png" alt="Omnifood App on iPhone" class="app-screen">
+                <img src="assets/img/app-iPhone.png" alt="Omnifood App on iPhone" class="app-screen" data-aos="fade-up" data-aos-duration="1000">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="work-step">
@@ -273,19 +273,19 @@
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <blockquote>
+                <blockquote data-aos="fade-left" data-aos-duration="1000">
                     Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
                     <cite> <img src="assets/img/customer-1.jpg" alt="Alberto Ducan">  Alberto Duncan</cite>
                 </blockquote>
             </div>
             <div class="col span-1-of-3">
-                <blockquote>
+                <blockquote data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">
                     Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
                     <cite> <img src="assets/img/customer-2.jpg" alt="Joana Silva">  Joana Silva</cite>
                 </blockquote>
             </div>
             <div class="col span-1-of-3">
-                <blockquote>
+                <blockquote data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                     I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
                     <cite> <img src="assets/img/customer-3.jpg" alt="Milton Chapman">  Milton Chapman</cite>
                 </blockquote>
@@ -395,7 +395,7 @@
         </div>
 
         <div class="row">
-            <form class="contact-form" action="" method="POST">
+            <form class="contact-form" action="" method="POST" data-aos="zoom-in" data-aos-duration="500">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
@@ -484,6 +484,10 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- <script src="js/jquery.waypoints.min.js"></script> -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>

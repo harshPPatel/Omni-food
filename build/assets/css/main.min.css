@@ -771,10 +771,7 @@ header .btn-full {
     padding-right: 3%;
     display: flex;
     align-items: center;
-    justify-content: flex-end; }
-    @media (max-width: 1200px) {
-      .steps-box:first-of-type {
-        justify-content: center; } }
+    justify-content: center; }
     @media (max-width: 1023px) {
       .steps-box:first-of-type {
         padding-right: 0; } }
@@ -976,11 +973,14 @@ header .btn-full {
   width: 60%;
   margin: 0 auto;
   margin-top: 50px; }
+  .contact-form .row:last-of-type {
+    text-align: right;
+    width: 100%; }
+    .contact-form .row:last-of-type .btn {
+      margin-right: 15px; }
   @media (max-width: 1023px) {
     .contact-form {
-      width: 80%; }
-      .contact-form .row:last-of-type {
-        text-align: right; } }
+      width: 80%; } }
   @media (max-width: 767px) {
     .contact-form {
       width: 90%;
