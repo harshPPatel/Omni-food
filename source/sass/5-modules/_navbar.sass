@@ -2,6 +2,7 @@ nav,
 nav .row
   width: 100%
   height: $nav-height
+  transition: all 0.4s ease
 
 nav .row
   display: flex
@@ -11,6 +12,7 @@ nav .row
   height: 100px
   width: auto
   margin: 20px 0
+  transition: all 0.4s ease
 
 .main-nav
   list-style: none
@@ -38,3 +40,30 @@ nav .row
 @media (max-width: 767px)
   .main-nav
     display: none
+
+.logo-black
+  display: none
+
+// Sticky Navbar
+.sticky
+  background-color: rgba(255,255,255,0.95)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  box-shadow: 0 2px 2px #efefef
+  z-index: 9999
+  height: 80px
+.sticky .logo
+  height: 60px
+.sticky .main-nav
+  height: 80px
+.sticky .nav-links
+  color: $font-color
+  line-height: 80px
+.sticky .logo-white
+  display: none
+.sticky .logo-black
+  display: inline-block
+.sticky .row
+  height: 80px

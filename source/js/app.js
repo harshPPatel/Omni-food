@@ -1,10 +1,12 @@
+// Fade up navbar on scroll
+$(document).ready(function() {
 
-// JavaScript
-window.sr = ScrollReveal(); 
-
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px' 
-// });
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 600) {
+        $("nav").addClass("sticky");
+    } else {
+        $("nav").removeClass("sticky");
+    }
+  });
+});

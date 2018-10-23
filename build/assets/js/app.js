@@ -1,1 +1,1 @@
-window.sr=ScrollReveal();
+$(document).ready(function(){$(window).scroll(function(){600<=$(window).scrollTop()?$("nav").addClass("sticky"):$("nav").removeClass("sticky")})});
